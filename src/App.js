@@ -1,7 +1,4 @@
 import Home from "./pages/Home";
-import Contact from "./components/Contact";
-import Facebook from "./components/Facebook";
-import Menu from "./components/Menu";
 import Cursor from "./Cursor";
 
 import Extra from "./pages/Extra";
@@ -20,12 +17,6 @@ function App() {
         <Route path="/extra" element = {<Extra/>} />
         <Route path="/extratwo" element = {<Extratwo/>} />
       </Routes>
-
-      <Contact/>
-      <Facebook/>
-      <Menu />
-
-
     </Router>
 
     <Cursor />
