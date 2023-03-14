@@ -18,9 +18,7 @@ class Home extends  React.Component{
                 <meta name = "theme-color" content = {Config.THEME_COLOR}/>
             </Helmet>
 
-<div className="container">
-
-    
+<div className="container">    
         <nav className="navbar">
           <ul>
             <li><a href ="#home">Hem</a></li>
@@ -901,7 +899,7 @@ class Home extends  React.Component{
           <div className="Länk-formulär-etc">
             <NavLink to="Extra" activeClassName="active">Formulär, tabell</NavLink>
           </div>  
-          <br /> Extrasida för att uppfylla kraven under uppgift 5.
+          <br /> Extrasida för att uppfylla kraven i labb 2.
         </div>
         
 
