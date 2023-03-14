@@ -3,7 +3,7 @@ import React from 'react';
 class Facebook extends React.Component {
     render() {
         return (
-        <body>
+        
             <div className="container">
                 <section id="facebook">
                     <div className="facebook-section">
@@ -58,7 +58,7 @@ class Facebook extends React.Component {
                     </div>
                 </section>
             </div>
-        </body>
+        
         );
     }
 }

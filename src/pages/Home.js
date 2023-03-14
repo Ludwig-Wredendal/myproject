@@ -10,7 +10,10 @@ const CANONICAL = Config.SITE_DOMAIN + "/";
 class Home extends  React.Component{
     render() {
         return  (
-        <body>
+
+            
+
+    <div className="container">
             <Helmet>
                 <title>{TITLE}</title>
                 <link rel="canonical" href="{CANONICAL}"/>
@@ -18,7 +21,6 @@ class Home extends  React.Component{
                 <meta name = "theme-color" content = {Config.THEME_COLOR}/>
             </Helmet>
 
-<div className="container">
         <nav className="navbar">
           <ul>
             <li><a href ="#home">Hem</a></li>
@@ -61,11 +63,8 @@ class Home extends  React.Component{
           <br /> Extrasida för att uppfylla kraven under uppgift 5.
         </div>
         
+    </div>
 
-</div>
-
-
-</body>
         );
     }
 }

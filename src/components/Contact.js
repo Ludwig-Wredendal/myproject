@@ -3,7 +3,7 @@ import React from 'react';
 class Contact extends React.Component {
     render() {
         return (
-        <body>
+        
             <div className="container">
                 <section id="contact">
                     <div className="row">
@@ -35,7 +35,7 @@ class Contact extends React.Component {
                     </div>
                 </section>
             </div>
-        </body>
+        
         );
     }
 }

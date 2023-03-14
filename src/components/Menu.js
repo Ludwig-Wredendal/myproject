@@ -3,7 +3,7 @@ import React from 'react';
 class Menu extends React.Component{
     render() {
         return (
-        <body>
+        
             <div className="container">
                 <section id="menu">
             <div className="menu-section">
@@ -761,7 +761,7 @@ class Menu extends React.Component{
             </div>
                 </section>
             </div>
-        </body>
+        
         );
     }
 }
