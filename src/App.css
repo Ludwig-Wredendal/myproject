@@ -487,6 +487,9 @@ table {
   button{
       display:none;
   }
+  .cursor-dot-outline{
+    display: none;
+  }
 }
 @media print {
   .navbar{
