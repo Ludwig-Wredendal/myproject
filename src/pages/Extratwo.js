@@ -1,11 +1,11 @@
 import React from "react";
-import {NavLink, Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {Helmet} from "react-helmet";
 import Config from "../Config.json";
 
 const TITLE = "Extratwo | " + Config.SITE_TITLE;
 const DESC = "Thank you for answering";
-const CANONICAL = Config.SITE_DOMAIN + "/";
+/*const CANONICAL = Config.SITE_DOMAIN + "/"; */
 
 class ExtraTwo extends React.Component {
 

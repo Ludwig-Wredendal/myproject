@@ -1,11 +1,11 @@
 import React from "react";
-import {NavLink, Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {Helmet} from "react-helmet";
 import Config from "../Config.json";
 
 const TITLE = "Extra | " + Config.SITE_TITLE;
 const DESC = "Extra page";
-const CANONICAL = Config.SITE_DOMAIN + "/";
+/*const CANONICAL = Config.SITE_DOMAIN + "/"; */
 
 
 class Extra extends React.Component {

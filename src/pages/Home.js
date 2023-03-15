@@ -1,11 +1,11 @@
 import React from "react";
 import {Helmet} from "react-helmet";
 import Config from "../Config.json";
-import {NavLink, Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const TITLE = "Home | " + Config.SITE_TITLE;
 const DESC = "Restaurang Chattanoga";
-const CANONICAL = Config.SITE_DOMAIN + "/";
+/*const CANONICAL = Config.SITE_DOMAIN + "/"; */
 
 class Home extends  React.Component{
     render() {

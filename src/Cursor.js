@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import { useCallback } from 'react';
+
 import './App.css';
 
 const Cursor = () =>  {
@@ -16,7 +18,8 @@ const Cursor = () =>  {
 
     const requestRef = useRef(null);
 
-    useEffect(() => {
+    // eslint-disable-next-line
+    const innerFunction = useCallback(() => {
         document.addEventListener('mousedown', mouseOverEvent);
         document.addEventListener('mouseup', mouseOutEvent);
         document.addEventListener('mousemove', mouseMoveEvent);
@@ -34,8 +37,34 @@ const Cursor = () =>  {
 
             cancelAnimationFrame(requestRef.current);
         }
+    });
 
-    }, []);
+    useEffect(() => {
+
+        innerFunction();
+
+        /*
+        document.addEventListener('mousedown', mouseOverEvent);
+        document.addEventListener('mouseup', mouseOutEvent);
+        document.addEventListener('mousemove', mouseMoveEvent);
+        document.addEventListener('mouseenter', mouseEnterEvent);
+        document.addEventListener('mouseleave', mouseLeaveEvent);
+
+        animateDotOutline();
+
+        return() => {
+            document.removeEventListener('mousedown', mouseOverEvent);
+            document.removeEventListener('mouseup', mouseOutEvent);
+            document.removeEventListener('mousemove', mouseMoveEvent);
+            document.removeEventListener('mouseenter', mouseEnterEvent);
+            document.removeEventListener('mouseleave', mouseLeaveEvent);
+
+            cancelAnimationFrame(requestRef.current);
+        }
+        */
+
+
+    }, [innerFunction]);
     
     
 
